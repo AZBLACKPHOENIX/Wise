@@ -230,6 +230,203 @@
   .foot-note{ margin-top:28px; color:var(--red-dim); font-family:var(--mono-data); font-size:12px; text-align:center; }
 
   ::selection{ background:rgba(62,214,181,0.25); }
+
+  /* ===============================
+   RESPONSIVE DESIGN
+================================*/
+
+/* Large Tablets */
+@media (max-width: 992px){
+
+:root{
+    --maxw:95%;
+}
+
+.hero{
+    padding:50px 20px 30px;
+}
+
+.projects{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.wrap{
+    padding:0 20px;
+}
+
+.out-name{
+    font-size:36px;
+}
+
+.term-body{
+    font-size:14px;
+}
+
+}
+
+/* Tablets */
+@media (max-width:768px){
+
+.navrow{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav.links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    padding:40px 15px 25px;
+}
+
+.out-name{
+    font-size:32px;
+}
+
+.out-title{
+    font-size:14px;
+}
+
+.out-desc{
+    font-size:14px;
+}
+
+.hero-links{
+    justify-content:center;
+}
+
+.projects{
+    grid-template-columns:1fr;
+}
+
+.term-body{
+    max-height:340px;
+}
+
+.commit{
+    margin-bottom:25px;
+}
+
+.sec-head{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.contact-term{
+    padding:20px;
+}
+
+}
+
+/* Mobile */
+@media (max-width:576px){
+
+body{
+    font-size:14px;
+}
+
+.navrow{
+    padding:14px;
+}
+
+.brand{
+    font-size:13px;
+}
+
+nav.links{
+    gap:10px;
+}
+
+nav.links a{
+    font-size:11px;
+}
+
+.hero{
+    padding:25px 10px;
+}
+
+.out-name{
+    font-size:28px;
+    line-height:1.2;
+}
+
+.out-title{
+    font-size:13px;
+}
+
+.out-desc{
+    font-size:13px;
+}
+
+.hero-links{
+    flex-direction:column;
+    align-items:stretch;
+}
+
+.pill{
+    text-align:center;
+}
+
+.term-body{
+    padding:18px;
+    font-size:13px;
+    max-height:300px;
+}
+
+.pkg-body{
+    padding:15px;
+}
+
+.edu-item{
+    padding:15px;
+}
+
+.contact-term{
+    padding:18px;
+}
+
+.foot-links{
+    flex-direction:column;
+    gap:10px;
+}
+
+}
+
+/* Small Phones */
+@media (max-width:400px){
+
+.out-name{
+    font-size:24px;
+}
+
+.term-body{
+    font-size:12px;
+}
+
+.sec-title{
+    font-size:18px;
+}
+
+.pkg-list{
+    padding-left:15px;
+}
+
+.wrap{
+    padding:0 12px;
+}
+
+.hero{
+    padding:20px 8px;
+}
+
+.term-input{
+    font-size:12px;
+}
+
+}
+  
 </style>
 </head>
 <body>
